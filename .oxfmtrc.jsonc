@@ -1,0 +1,10 @@
+{
+  "$schema": "https://githubusercontent.com",
+  "plugins": {
+    "svelte": true
+  },
+  "formatter": {
+    "tabWidth": 4,
+    "singleQuote": false
+  }
+}

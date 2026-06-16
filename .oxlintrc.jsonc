@@ -1,0 +1,26 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": [
+    "typescript",
+    "unicorn",
+    "promise",
+    "oxc"
+  ],
+  "categories": {
+    "correctness": "error"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.svelte"],
+      "rules": {
+        // Relax template constraints Oxlint cannot read natively yet
+        "svelte/no-at-html-tags": "off",
+        "svelte/require-each-key": "off"
+      }
+    }
+  ],
+  "rules": {},
+  "env": {
+    "builtin": true
+  }
+}
